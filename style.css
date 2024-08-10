@@ -75,7 +75,7 @@ body{
     grid-area: 1 / 2 / 2 / 5;
     display: grid;
     grid-template-rows: 0.5fr 2fr;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: minmax(0,2fr) minmax(0,1fr); 
 }
 
 .search {
@@ -179,7 +179,7 @@ button {
     grid-area: 2 / 2 / 5 / 5;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: minmax(0,2fr) minmax(0,1fr); 
     background-color: #fef2f2;
     overflow: auto;
 }
@@ -235,7 +235,7 @@ button {
 .profile {
     display: flex;
     align-items: space-around;
-    gap: 15px;
+    padding: 5px;
 }
 
 .text-profile {
